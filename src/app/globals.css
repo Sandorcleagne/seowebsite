@@ -1,10 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+:root {
+  --primary-color: #698237;
+  --primary-text-color: #443f35;
+  --secondary-text-color: #698237;
+}
 body {
   max-width: 80rem;
   margin-left: auto;
   margin-right: auto;
   font-family: "proximanova-regular", Arial !important;
+  background-color: #fff;
+  color: #49453b;
+  font-size: 16px;
 }

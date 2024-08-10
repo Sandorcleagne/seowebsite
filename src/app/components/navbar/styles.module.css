@@ -1,5 +1,114 @@
-.outerNav {
-  width: 80%;
-  height: 300px;
-  background-color: red;
+.mainContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.innerContainer {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.logoContainer {
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+.navItemContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+.navItem {
+  font-family: proximanova-extrabld, Arial;
+  font-size: 18px;
+  color: var(--primary-text-color);
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 800;
+}
+.contactInformation {
+  color: var(--secondary-text-color);
+}
+.phoneIcon {
+  color: var(--secondary-text-color);
+}
+.phoneText {
+  color: var(--secondary-text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  gap: 12px;
+}
+.mobileContactInfo {
+  display: none;
+}
+.hamburgerMenuIcon {
+  color: var(--secondary-text-color);
+  font-size: 20px;
+  font-weight: 800;
+}
+.tabletContainer {
+  display: none;
+}
+.mobileListContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  border-bottom: 1px solid var(--primary-color);
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.circleRightIcon {
+  color: var(--secondary-text-color);
+}
+.mobileListItems {
+  color: var(--primary-text-color);
+  font-size: 20px;
+  font-weight: 800;
+}
+/* MEDIA QUERY FOR MOBILE */
+@media only screen and (max-width: 600px) {
+  .navItemContainer {
+    display: none;
+  }
+  .mobileContactInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+  }
+  .contactInformation {
+    display: none;
+  }
+  .tabletContainer {
+    display: none;
+  }
+}
+
+/* MEDIA QUERY FOR TABLETS */
+@media only screen and (min-width: 601px) and (max-width: 1023px) {
+  .navItemContainer {
+    display: none;
+  }
+  .contactInformation {
+    display: none;
+  }
+  .tabletContactInformation {
+    display: flex;
+  }
+  .tabletContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+  }
 }
