@@ -1,0 +1,32 @@
+.outerSection {
+  width: 100%;
+  margin-top: 30px;
+}
+.headingSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainHeading {
+  width: 50%;
+  font-size: 43px;
+  text-transform: capitalize;
+}
+.mainHeading2 {
+  font-weight: 800;
+}
+.mainHeading1 {
+}
+@media only screen and (max-width: 600px) {
+  .mainHeading {
+    font-size: 26px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1023px) {
+  .mainHeading {
+    font-size: 26px;
+    width: 50%;
+  }
+}
