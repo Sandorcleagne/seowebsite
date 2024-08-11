@@ -48,14 +48,14 @@ const Navbar = () => {
         </div>
         <div className={contactInformation}>
           <div className={phoneText}>
-            <FontAwesomeIcon icon={faPhone} beat className={phoneIcon} />
+            <FontAwesomeIcon icon={faPhone} shake className={phoneIcon} />
             <a href={`tel:${contactNumber}`}>{contactNumber}</a>
           </div>
         </div>
         <div className={tabletContainer}>
           <div className={tabletContactInformation}>
             <div className={phoneText}>
-              <FontAwesomeIcon icon={faPhone} beat className={phoneIcon} />
+              <FontAwesomeIcon icon={faPhone} shake className={phoneIcon} />
               <a href={`tel:${contactNumber}`}>{contactNumber}</a>
             </div>
           </div>
@@ -69,7 +69,7 @@ const Navbar = () => {
           <div className={mobileMenu}>
             <div className={phoneText}>
               <a href={`tel:${contactNumber}`}>
-                <FontAwesomeIcon icon={faPhone} beat className={phoneIcon} />
+                <FontAwesomeIcon icon={faPhone} shake className={phoneIcon} />
               </a>
             </div>
           </div>

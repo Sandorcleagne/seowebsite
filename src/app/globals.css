@@ -5,6 +5,8 @@
   --primary-color: #698237;
   --primary-text-color: #443f35;
   --secondary-text-color: #698237;
+  --primary-dark-color: #556c25;
+  --third-text-color: #f5d74f;
 }
 body {
   max-width: 80rem;
