@@ -1,0 +1,147 @@
+.mainHeroSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.innerHeroSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/svg/subpage-header-left-corner.svg"),
+    url("/svg/subpage-header-right-corner.svg");
+  background-position: left center, right center; /* Position left and right */
+  background-repeat: no-repeat, no-repeat; /* Prevent repeating */
+  background-size: auto 100%, auto 100%; /* Size to height of container */
+  height: 300px; /* Example height */
+  padding: 20px; /* Optional: Inner padding */
+  box-sizing: border-box; /* Includes padding in width/height */
+}
+
+.mainHeading {
+  color: var(--primary-text-color);
+  font-size: 87px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.mainHeading2 {
+  color: var(--secondary-text-color);
+  font-size: 87px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-left: 5px;
+  line-height: normal;
+}
+.subHeading {
+  color: var(--primary-text-color);
+  font-size: 29px !important;
+  padding-top: 19px !important;
+  line-height: 34px;
+  text-transform: uppercase;
+}
+/* .emailFieldContainer {
+  background: linear-gradient(
+    180deg,
+    rgba(215, 240, 163, 0.21) 0%,
+    rgba(213, 220, 201, 0.38) 100%
+  );
+  border-radius: 8px;
+  border: none;
+  margin: 35px auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+.emailFeild {
+  padding: 15px 10px;
+}
+.emailForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  width: 100%;
+  margin-top: 12px;
+}
+.emailButton {
+  background-color: #d87928;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 16px;
+  font-family: "ProximaNova-Bold", Arial;
+  /* padding: 15px 10px; */
+  height: 45px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 50%;
+  font-weight: 500;
+}
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.noFocusBorder:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: initial;
+}
+@media only screen and (max-width: 600px) {
+  .mainHeading {
+    font-size: 32px;
+  }
+  .mainHeading2 {
+    font-size: 32px;
+  }
+  .innerHeroSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/svg/subpage-header-left-corner.svg");
+
+    background-position: left center, right center; /* Position left and right */
+    background-repeat: no-repeat, no-repeat; /* Prevent repeating */
+    background-size: auto 100%, auto 100%; /* Size to height of container */
+    height: 300px; /* Example height */
+    padding: 20px; /* Optional: Inner padding */
+    box-sizing: border-box; /* Includes padding in width/height */
+  }
+  .subHeading {
+    color: var(--primary-text-color);
+    font-size: 19px !important;
+    padding-top: 19px !important;
+    line-height: 34px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .emailForm {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    margin-top: 12px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .emailButton {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1023px) {
+  .mainHeading {
+    font-size: 68px;
+  }
+  .mainHeading2 {
+    font-size: 68px;
+  }
+  .emailButton {
+    width: 65%;
+  }
+}
