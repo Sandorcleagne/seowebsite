@@ -10,6 +10,7 @@ import {
   faCircleRight,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 const Navbar = () => {
   const [show, setShow] = useState(false);
   const handleShow = () => setShow(true);
@@ -32,12 +33,21 @@ const Navbar = () => {
     mobileListContainer,
     circleRightIcon,
     mobileListItems,
+    mainLogo,
   } = styles;
   return (
     <div className={mainContainer}>
       <div className={innerContainer}>
         <Link href="/">
-          <div className={logoContainer}>Logo</div>
+          <div className={logoContainer}>
+            <Image
+              src="/images/logo-E3media.png"
+              height={200}
+              width={300}
+              alt="logo"
+              className={mainLogo}
+            />
+          </div>
         </Link>
         <div className={navItemContainer}>
           {navItems.map((item) => (
@@ -88,7 +98,13 @@ const Navbar = () => {
               className={logoContainer}
               onClick={() => handleClose()}
             >
-              Logo
+              <Image
+                src="/images/logo-E3media.png"
+                height={200}
+                width={300}
+                alt="logo"
+                className={mainLogo}
+              />
             </Link>
           </Modal.Title>
         </Modal.Header>
