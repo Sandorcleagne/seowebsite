@@ -1,147 +1,148 @@
+/* Define new styles for the hero section and form elements */
 .mainHeroSection {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #2c3e50; /* Darker background for more contrast */
 }
+
 .innerHeroSection {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/svg/subpage-header-left-corner.svg"),
-    url("/svg/subpage-header-right-corner.svg");
-  background-position: left center, right center; /* Position left and right */
-  background-repeat: no-repeat, no-repeat; /* Prevent repeating */
-  background-size: auto 100%, auto 100%; /* Size to height of container */
-  height: 300px; /* Example height */
-  padding: 20px; /* Optional: Inner padding */
-  box-sizing: border-box; /* Includes padding in width/height */
+  background-position: left center, right center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 120px auto, 120px auto; /* Adjust background image size */
+  height: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .mainHeading {
-  color: var(--primary-text-color);
-  font-size: 87px;
+  color: #ecf0f1; /* Light color for high contrast */
+  font-size: 64px; /* Reduced font size for better proportion */
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 3px; /* Increased letter spacing for readability */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); /* Enhanced text shadow */
 }
+
 .mainHeading2 {
-  color: var(--secondary-text-color);
-  font-size: 87px;
+  color: #ecf0f1;
+  font-size: 64px;
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: 1px;
-  margin-left: 5px;
-  line-height: normal;
+  letter-spacing: 3px;
+  margin-left: 15px; /* Increased margin for better separation */
+  line-height: 1.1; /* Adjusted line-height */
 }
+
 .subHeading {
-  color: var(--primary-text-color);
-  font-size: 29px !important;
-  padding-top: 19px !important;
-  line-height: 34px;
+  color: #ecf0f1;
+  font-size: 26px; /* Slightly increased font size for better readability */
+  padding-top: 20px;
+  line-height: 32px;
   text-transform: uppercase;
+  font-weight: 500;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Added shadow for depth */
 }
-/* .emailFieldContainer {
-  background: linear-gradient(
-    180deg,
-    rgba(215, 240, 163, 0.21) 0%,
-    rgba(213, 220, 201, 0.38) 100%
-  );
-  border-radius: 8px;
-  border: none;
-  margin: 35px auto 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
+
+/* Form Styles */
 .emailFeild {
-  padding: 15px 10px;
+  padding: 16px 12px; /* Adjusted padding for better spacing */
+  border-radius: 10px; /* Rounded corners for a modern look */
+  border: 1px solid #bdc3c7; /* Light border for input fields */
+  background-color: #fff; /* White background for input fields */
 }
+
 .emailForm {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 25px;
+  gap: 20px; /* Adjusted gap for spacing */
   width: 100%;
-  margin-top: 12px;
+  margin-top: 20px; /* Increased margin for better separation */
 }
+
 .emailButton {
-  background-color: #d87928;
-  border-radius: 8px;
+  background-color: #e67e22; /* Brighter orange for contrast */
+  border-radius: 10px;
   color: #fff;
   font-size: 18px;
-  line-height: 16px;
-  font-family: "ProximaNova-Bold", Arial;
-  /* padding: 15px 10px; */
-  height: 45px;
+  line-height: 22px;
+  font-family: "ProximaNova-Bold", Arial, sans-serif;
+  height: 50px;
   border: none;
   outline: none;
   cursor: pointer;
   width: 50%;
   font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for shadow */
 }
-.formContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.noFocusBorder:focus {
-  outline: none;
-  box-shadow: none;
-  border-color: initial;
-}
-@media only screen and (max-width: 600px) {
-  .mainHeading {
-    font-size: 32px;
-  }
-  .mainHeading2 {
-    font-size: 32px;
-  }
-  .innerHeroSection {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("/svg/subpage-header-left-corner.svg");
 
-    background-position: left center, right center; /* Position left and right */
-    background-repeat: no-repeat, no-repeat; /* Prevent repeating */
-    background-size: auto 100%, auto 100%; /* Size to height of container */
-    height: 300px; /* Example height */
-    padding: 20px; /* Optional: Inner padding */
-    box-sizing: border-box; /* Includes padding in width/height */
+.emailButton:hover {
+  background-color: #d35400; /* Darker orange on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Added shadow on hover */
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+  .mainHeading, .mainHeading2 {
+    font-size: 36px; /* Adjusted for smaller screens */
   }
+  
+  .innerHeroSection {
+    background-size: 80px auto, 80px auto; /* Smaller background images for mobile */
+  }
+  
   .subHeading {
-    color: var(--primary-text-color);
-    font-size: 19px !important;
-    padding-top: 19px !important;
-    line-height: 34px;
-    text-transform: uppercase;
-    font-weight: 700;
+    font-size: 20px;
+    padding-top: 10px;
   }
+  
   .emailForm {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    width: 100%;
-    margin-top: 12px;
-    justify-content: center;
     flex-direction: column;
+    gap: 15px; /* Adjusted gap for mobile screens */
   }
+  
   .emailButton {
-    width: 100%;
+    width: 100%; /* Full width for mobile screens */
   }
 }
+
 @media only screen and (min-width: 601px) and (max-width: 1023px) {
-  .mainHeading {
-    font-size: 68px;
+  .mainHeading, .mainHeading2 {
+    font-size: 50px; /* Adjusted for medium screens */
   }
-  .mainHeading2 {
-    font-size: 68px;
-  }
+  
   .emailButton {
-    width: 65%;
+    width: 70%; /* Adjusted button width for medium screens */
+  }
+}
+
+/* Keyframes for Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

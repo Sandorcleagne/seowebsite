@@ -1,32 +1,50 @@
+/* Outer Section Styles */
 .outerSection {
   width: 100%;
   margin-top: 30px;
+  padding: 20px; /* Added padding for better spacing */
+  box-sizing: border-box; /* Ensures padding is included in the width */
 }
+
+/* Heading Section Styles */
 .headingSection {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column; /* Center headings vertically */
 }
+
+/* Main Heading Styles */
 .mainHeading {
-  width: 50%;
   font-size: 43px;
   text-transform: capitalize;
+  text-align: center; /* Center text alignment */
+  color: #2c3e50; /* Set a default text color */
+  margin: 0; /* Remove default margin */
+  padding: 10px 0; /* Padding for spacing */
 }
+
 .mainHeading2 {
   font-weight: 800;
+  color: #3498db; /* A contrasting color for the secondary heading */
 }
-/* .mainHeading1 {
-} */
+
+/* Responsive Styles */
+
+/* For small screens */
 @media only screen and (max-width: 600px) {
   .mainHeading {
     font-size: 26px;
-    width: 100%;
+    width: 100%; /* Full width for smaller screens */
+    padding: 15px 0; /* Adjust padding for smaller screens */
   }
 }
+
+/* For medium screens */
 @media only screen and (min-width: 601px) and (max-width: 1023px) {
   .mainHeading {
-    font-size: 26px;
-    width: 50%;
+    font-size: 36px; /* Adjusted for medium screens */
+    width: 50%; /* Maintain width for medium screens */
   }
 }
